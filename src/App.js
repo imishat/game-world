@@ -1,6 +1,7 @@
 
 import './App.css';
 import Gmes from './components/Games/Gmes';
+
 import Header from './components/Header/Header';
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
         <div className = "App" >
         
         <Header/>
-        <Gmes/>
+        <Gmes></Gmes>
+        
         </div>
     );
 }

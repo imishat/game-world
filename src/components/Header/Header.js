@@ -1,9 +1,20 @@
 import React from 'react';
-
+import'./Header.css'
 const Header = () => {
     return (
         <div>
-            <h1>hello to header</h1>
+           <div>
+            <nav className='header'>
+                <a className='logo' href="#">Game World</a>
+                <div >
+                    <a href="/shop">Shop</a>
+                    <a href="/orders">Orders</a>
+                    <a href="/inventory">Inventory</a>
+                    <a href="/about">About</a>
+                </div>
+            </nav>
+        </div>
+        
         </div>
     );
 };
