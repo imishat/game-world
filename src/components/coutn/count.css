@@ -2,7 +2,6 @@
     background-color: #42127226;
     position: sticky;
     top: 0;
-    padding: 20px;
 }
 
 .profile {
@@ -25,6 +24,11 @@
     border-radius: 30px;
     padding: 10px;
     margin: 5px;
+    color: green;
+}
+
+.btn-2:hover {
+    color: tomato;
 }
 
 .timer {
@@ -34,4 +38,8 @@
     background-color: aliceblue;
     margin: 5px;
     border-radius: 10px;
+}
+
+.titel {
+    background-color: blue;
 }

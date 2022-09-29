@@ -39,24 +39,24 @@ const Count = ({count}) => {
 
         <div className='profile' >
             
-            <h1>Mojahid islam Mishat</h1>
+            <h4>Mojahid islam Mishat</h4>
         </div>
         <div className='box' >
             <div>
-                <h1>80<small>kg</small></h1>
+                <h5>80<small>kg</small></h5>
                 <p>Weight</p>
             </div >
             <div>
-                <h1>5.11<small>feet</small></h1>
+                <h5>5.11<small>feet</small></h5>
                 <p>Height</p>
             </div>
             <div>
-                <h1>20<span>yers</span></h1>
+                <h5>20</h5>
                 <p>Age</p>
             </div>
         </div >
         <div>
-            <h1>Add A Break</h1>
+            <h4>Add A Break</h4>
             <div className='btn-2'>
                
                 <button onClick={()=>addTime(30)}>30s</button>
@@ -76,10 +76,10 @@ const Count = ({count}) => {
                 <h3>Break time</h3>
                 <p>{b}</p>
             </div>
-            <button onClick={showToastMessage} className='btn'>Activity Completed</button>
+            <button onClick={showToastMessage} className='titel'>Activity Completed</button>
             <ToastContainer />
         </div >
-
+        
     </div >
         
     );

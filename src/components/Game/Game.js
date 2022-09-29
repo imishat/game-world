@@ -13,7 +13,7 @@ const Game = ({game,addTime}) => {
            
             <p>For Age : {age}</p>
             <p>Time required : {time}</p>
-            <button onClick={()=>addTime(game)}>Add to list</button>
+            <button onClick={()=>addTime(game)} className='button'>Add to list</button>
         </div>
 
     </div>
