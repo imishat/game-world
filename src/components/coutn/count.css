@@ -1,0 +1,37 @@
+.cart-container {
+    background-color: #42127226;
+    position: sticky;
+    top: 0;
+    padding: 20px;
+}
+
+.profile {
+    display: flex;
+}
+
+.box {
+    display: flex;
+    justify-content: space-around;
+    background-color: azure;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+.box div {
+    margin: 10px;
+}
+
+.btn-2 button {
+    border-radius: 30px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aliceblue;
+    margin: 5px;
+    border-radius: 10px;
+}

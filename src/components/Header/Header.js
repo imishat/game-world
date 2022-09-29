@@ -7,9 +7,9 @@ const Header = () => {
             <nav className='header'>
                 <a className='logo' href="#">Game World</a>
                 <div >
-                    <a href="/shop">Shop</a>
-                    <a href="/orders">Orders</a>
-                    <a href="/inventory">Inventory</a>
+                    <a href="/shop">Home</a>
+                    <a href="/orders">Next match</a>
+                    <a href="/inventory">Game</a>
                     <a href="/about">About</a>
                 </div>
             </nav>

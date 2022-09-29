@@ -13,9 +13,9 @@ const Gmes = () => {
     },[])
     const[times,setTmie]=useState([])
    
-    const addTime=(game)=>{
-       // console.log(game)
-         const newTime=[...times,game]
+    const addTime=(timer)=>{
+       console.log(timer.time)
+         const newTime=[...times,timer]
          setTmie(newTime)
     }
    
@@ -32,7 +32,8 @@ const Gmes = () => {
            
            <div className="container">
               
-               <Count time={times}></Count>
+               <Count count={times}></Count>
+              
               
                
            </div>
