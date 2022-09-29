@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import'./count.css'
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
+import { addToTime } from '../data/Data';
 
 const Count = ({count}) => {
    console.log(count)
@@ -17,14 +18,9 @@ const Count = ({count}) => {
     const[b,setB]=useState(0)
     const addTime=(add)=>{
         setB(add)
-        const quantity=localStorage.getItem(add)
-        if(quantity){
-            const newQuantity=parseInt(quantity)+1
-            localStorage.setItem(add,newQuantity)
-        }
-        else{
-            localStorage.setItem(add,1)
-        }
+        addToTime(add)
+
+      
         
     }
     

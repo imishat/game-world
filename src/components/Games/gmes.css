@@ -9,3 +9,9 @@
     gap: 45px;
     margin: 100px 50px;
 }
+
+@media screen and (max-width:800px) {
+    .service-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
