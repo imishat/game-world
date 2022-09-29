@@ -6,11 +6,10 @@ import { addToTime } from '../data/Data';
 
 const Count = ({count}) => {
    console.log(count)
-   // const{count}=props
-  // console.log(time.time)
+   
     let sum=0
     for(const total of count){
-       // console.log(typeof(time.time))
+      
         sum=parseFloat(sum+total.time)
        
     }
@@ -76,7 +75,7 @@ const Count = ({count}) => {
                 <h3>Break time</h3>
                 <p>{b}</p>
             </div>
-            <button onClick={showToastMessage} className='titel'>Activity Completed</button>
+            <button onClick={showToastMessage} className='butto'>Activity Completed</button>
             <ToastContainer />
         </div >
         

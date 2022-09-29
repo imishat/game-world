@@ -15,6 +15,8 @@ const Blogs = () => {
  </p>
                 </div>
                 <div className='titel'>
+                    <h1>why use useeffect in react</h1>
+                    <p> useState can be used to toggle between two values, usually true and false , in order to toggle a flag, such as the display mode </p>
 
                 </div>
                 

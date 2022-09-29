@@ -2,7 +2,7 @@ import React from 'react';
 import'./Game.css'
 
 const Game = ({game,addTime}) => {
-    //console.log(game)
+  
     const{_id,picture,age,time,title
     }=game
     return (
