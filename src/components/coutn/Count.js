@@ -17,6 +17,7 @@ const Count = ({count}) => {
     const[b,setB]=useState(0)
     const addTime=(add)=>{
         setB(add)
+        localStorage.setItem(add,'1')
     }
     
     
