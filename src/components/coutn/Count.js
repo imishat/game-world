@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import'./count.css'
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 const Count = ({count}) => {
    console.log(count)
@@ -12,7 +14,18 @@ const Count = ({count}) => {
        
     }
     console.log(sum)
-   
+    const[b,setB]=useState(0)
+    const addTime=(add)=>{
+        setB(add)
+    }
+    
+    
+        const showToastMessage = () => {
+            toast.success('Well Done', {
+                position: toast.POSITION.TOP_CENTER
+            });
+        }
+       
     
    
     
@@ -41,11 +54,11 @@ const Count = ({count}) => {
             <h1>Add A Break</h1>
             <div className='btn-2'>
                
-                <button>30s</button>
-                <button>40s</button>
-                <button>50s</button>
-                <button>70s</button>
-                <button>90s</button>
+                <button onClick={()=>addTime(30)}>30s</button>
+                <button onClick={()=>addTime(40)}>40s</button>
+                <button onClick={()=>addTime(50)}>50s</button>
+                <button onClick={()=>addTime(60)}>60s</button>
+               
             </div>
         </div>
         <div>
@@ -56,10 +69,10 @@ const Count = ({count}) => {
             </div>
             <div className='timer'>
                 <h3>Break time</h3>
-                <p>200 seconds</p>
+                <p>{b}</p>
             </div>
-            <button className='btn'>Activity Completed</button>
-
+            <button onClick={showToastMessage} className='btn'>Activity Completed</button>
+            <ToastContainer />
         </div >
 
     </div >
